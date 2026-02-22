@@ -164,7 +164,7 @@ OWNER (3) → ADMIN (2) → VIEWER (1)
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 Base URL: `http://localhost:3000/api`
 
@@ -182,7 +182,7 @@ Base URL: `http://localhost:3000/api`
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 - `apps/api/src/auth/__tests__/rbac.spec.ts` — role hierarchy & permission checks
 - `apps/api/src/auth/__tests__/auth.service.spec.ts` — login/register logic
@@ -192,7 +192,7 @@ Base URL: `http://localhost:3000/api`
 
 ---
 
-## 🔭 Future Considerations
+##  Future Considerations
 
 - JWT refresh tokens (short-lived access + httpOnly refresh cookie)
 - CSRF protection via double-submit cookie

@@ -5,7 +5,7 @@ A full-stack, role-based task management system built with **NestJS**, **Angular
 
 ---
 
-## 📦 Repository Structure
+##  Repository Structure
 
 ```
 mmulpuri-d47ff5a4-59b4-41f7-8cc7-577c2fd8d7ef/
@@ -32,7 +32,7 @@ mmulpuri-d47ff5a4-59b4-41f7-8cc7-577c2fd8d7ef/
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Node.js ≥ 18
@@ -78,7 +78,7 @@ npm run test:dashboard
 
 ---
 
-## 🔐 Authentication & Signup Flow
+##  Authentication & Signup Flow
 
 ### Real JWT Authentication (no mocks)
 - Passwords hashed with **bcrypt** (12 rounds)
@@ -103,7 +103,7 @@ npm run test:dashboard
 
 ---
 
-## 🗄️ Data Model
+##  Data Model
 
 ### ERD
 ```
@@ -142,7 +142,7 @@ npm run test:dashboard
 
 ---
 
-## 🔑 Access Control
+##  Access Control
 
 ### Role Hierarchy
 ```
@@ -152,11 +152,11 @@ OWNER (3) → ADMIN (2) → VIEWER (1)
 ### Permission Matrix
 | Action | VIEWER | ADMIN | OWNER |
 |--------|--------|-------|-------|
-| Create/read/update/delete own tasks | ✅ | ✅ | ✅ |
-| Read ALL org tasks | ❌ | ✅ | ✅ |
-| Update/delete ANY task in org | ❌ | ✅ | ✅ |
-| View audit logs | ❌ | ✅ | ✅ |
-| Create organizations | ❌ | ❌ | ✅ |
+| Create/read/update/delete own tasks | Y | Y | Y |
+| Read ALL org tasks | N | Y | Y |
+| Update/delete ANY task in org | N | Y | Y |
+| View audit logs | N | Y | Y |
+| Create organizations | N | N | Y |
 
 ### Org Scoping
 - **Viewer** — own tasks only

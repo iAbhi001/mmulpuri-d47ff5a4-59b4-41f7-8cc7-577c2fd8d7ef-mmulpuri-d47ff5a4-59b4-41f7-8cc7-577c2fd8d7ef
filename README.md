@@ -46,7 +46,7 @@ npm install
 
 ### 2. Configure environment variables
 ```bash
-cp .env.example .env
+ls .env
 ```
 Edit `.env`:
 ```env
